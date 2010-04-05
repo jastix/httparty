@@ -1,6 +1,6 @@
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'spec_helper'))
 
-class CustomParser < HTTParty::Parser; end
+#class CustomParser < HTTParty::Parser; end
 
 describe HTTParty::Parser do
   describe ".SupportedFormats" do
@@ -152,3 +152,4 @@ describe HTTParty::Parser do
     end
   end
 end
+

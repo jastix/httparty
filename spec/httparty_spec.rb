@@ -1,6 +1,6 @@
 require File.expand_path(File.join(File.dirname(__FILE__), 'spec_helper'))
 
-class CustomParser
+class CustomParser < HTTParty::Parser
   def self.parse(body)
     return {:sexy => true}
   end
@@ -482,3 +482,4 @@ describe HTTParty do
     end
   end
 end
+
